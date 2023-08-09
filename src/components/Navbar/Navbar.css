@@ -1,0 +1,153 @@
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 1rem 2rem;
+}
+
+.app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__navbar-logo img {
+    width: 250px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 110px;
+    
+}
+
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.app__navbar-links li a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.app__navbar-links li a:hover {
+    border-bottom: 2px solid var(--color-green);
+}
+
+/* Add these styles to your existing Navbar.css file or create a new CSS file for mobile styles */
+
+/* Styles for small screen overlay */
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    transform: translateY(100%);
+  }
+  
+  .app__navbar-smallscreen_overlay.active {
+    transform: translateY(0);
+  }
+  
+  /* Close icon style */
+  .overlay__close {
+    position: absolute;
+    top: 42px;
+    right: 30px;
+    cursor: pointer;
+  }
+  
+  /* Styles for small screen links */
+  .app__navbar-smallscreen-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--color-black);
+  }
+  
+  .app__navbar-smallscreen-links li {
+    margin-bottom: 15px;
+  }
+  
+  .app__navbar-smallscreen-links li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .app__navbar-smallscreen-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+  }
+  
+  /* Styles for hamburger menu icon */
+  .app__navbar-smallscreen .GiHamburgerMenu  {
+    cursor: pointer;
+  }
+  
+  /* Adjustments for small screens */
+  @media screen and (max-width: 768px) {
+    .app__navbar-links {
+      display: none;
+    }
+  
+    .app__navbar-smallscreen {
+      display: block;
+    }
+  }
+  
+@media screen and (max-width: 2000px) {
+  .app__navbar-logo img {
+    
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__navbar{
+
+  }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__navbar-links {
+        display: none;
+    }
+
+    .app__navbar-smallscreen {
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+  .app__navbar-links {
+    display: none;
+  }
+
+  .app__navbar-smallscreen {
+    display: block;
+  }
+
+  /* Show the hamburger icon specifically for small screen overlay */
+  .app__navbar-smallscreen .GiHamburgerMenu {
+    display: block;
+  }
+}

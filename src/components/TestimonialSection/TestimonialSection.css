@@ -1,0 +1,103 @@
+/* TestimonialSection.css */
+
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  background: linear-gradient(150deg, #778f87, #dbe7f3);
+  border-radius: 50px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.testimonial-heading {
+  font-size: 42px;
+  color: #333;
+  margin-bottom: 70px; /* Add margin to create space between heading and content */
+  margin-top: -40px;
+  font-family: var(--font-base);
+}
+
+.testimonial-content {
+  text-align: center;
+  margin-bottom: 80px;
+  height: 30px; /* Set a fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-text {
+  font-size: 22px;
+  line-height: 2;
+  color: #333;
+}
+
+.testimonial-name {
+  font-size: 28px;
+  color: #777;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.testimonial-image {
+  max-width: 200px;
+  height: 100px; /* Set a fixed height for the image */
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: -30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  align-self: center; /* Center the image horizontally */
+}
+
+/* ... rest of the styles */
+
+.testimonial-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 160px;
+}
+
+button {
+  background-color: #467b59; /* Updated button color */
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: -50px;
+}
+
+button:hover {
+  background-color: #5aaf7f; /* Updated hover color */
+  transform: scale(1.1);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Add an extravagant entrance animation */
+@keyframes bounceIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(0.60);
+    opacity: 1;
+  }
+}
+
+.testimonial-section {
+  animation: bounceIn 1s cubic-bezier(0.42, 0, 0.58, 1);
+}

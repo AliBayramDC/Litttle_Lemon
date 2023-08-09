@@ -1,0 +1,96 @@
+/* Footer.css */
+
+.footer {
+    background-color: var(--color-green);
+    color: #fff;
+    padding: 50px 0;
+    height: 370px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+    border-radius: 10%;
+  }
+  
+  .footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-left: 95px;
+  }
+  
+  .footer-menu li {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    font-family: var(--font-base);
+  }
+  
+  .footer-menu a:hover {
+    color: #ffcc00;
+  }
+  
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .social-icon {
+    font-size: 29px;
+    color: #fff;
+    transition: color 0.3s ease;
+    margin-right: 20px;
+  }
+  
+  .social-icon:hover {
+    color: #ffcc00;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Additional Styling for Stunning Effects */
+  
+  .footer-logo {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .footer-menu {
+    animation: fadeInUp 1s ease-in-out 0.2s;
+  }
+  
+  .footer-social {
+    animation: fadeInUp 1s ease-in-out 0.4s;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
